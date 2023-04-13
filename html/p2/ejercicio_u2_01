@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!--
+    Nombre: Jose Gilberto Fajardo Zapata
+    Materia: Programacion 1
+    Fecha: 02/03/2023
+    Descripcion:   
+-->
+<html>
+    <head>      
+        <title>Unidad 02 - Ejercicio 1</title>      
+        <meta charset="utf-8">
+        <meta name="author" content="Jose Gilberto Fajardo Zapata">
+        <meta name="revised" content="Jueves, 02 de Marzo de 2023">
+        <meta name="description" content="table, border, tr, thm td, thead, tbody, tfoot, colspan, rowspan"> 
+    </head>
+    <body>
+        <hgroup>
+            <h1>Tablas</h1>
+            <h2>Combinar renglones y columnas</h2>
+            <table border="3">
+                <tr>
+                    <th>No.</th>
+                    <th>Nombre</th>
+                    <th>Apellido Paterno</th>
+                    <th>Apellido Materno</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Juan</td>
+                    <td></td>
+                    <td>Perez</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Pedro</td>
+                    <td colspan="2">Lopez</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td rowspan="2">Tomas</td>
+                    <td>Lopez</td>
+                    <td>Perez</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td colspan="2" rowspan="2">Martinez</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Gerardo</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td colspan="2">Abraham</td>
+                    <td colspan="2">Martinez</td>
+                </tr>
+            </table>
+            <hgroup>
+                <h2>Ejercicio No.1</h2>
+                <table border="3">
+                    <tr>
+                        <th colspan="4">Tabla No.1</th>
+                    </tr>
+                    <tr>
+                        <td>B</td>
+                        <td>F</td>
+                        <td>H</td>
+                        <td>J</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">E</td>
+                        <td>F</td>
+                        <td>H</td>
+                        <td>J</td>
+                    </tr>
+                    <tr>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <Td>I</Td>
+                    </tr>
+                </table>    
+            </hgroup>
+            <hgroup>
+                <h2>Ejercicio No.2</h2>
+                <table border="3">
+                    <tr>
+                        <th>Ejercicio No.2</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>8</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">11</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </hgroup>
+            <h2>Ejercicio No.3</h2>
+            <hgroup>
+                <table border="3">
+                    <tr>
+                        <th colspan="4">Tabla No. 3</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Comida</td>
+                        <td>Hotel</td>
+                        <td>Transporte</td>
+                    </tr>
+                    <tr>
+                        <th colspan="4">Vallarta</th>    
+                    </tr>
+                    <tr>
+                        <td>01/Jul/2022</td>
+                        <td>15</td>
+                        <td>120</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>02/Jul/2022</td>
+                        <td>18</td>
+                        <td>120</td>
+                        <td>34</td>
+                    </tr>
+                    <tr>
+                        <td>03/Jul/2022</td>
+                        <td>25</td>
+                        <td>120</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <th colspan="4">Nuevo Vallarta</th>
+                    </tr>
+                    <tr>
+                        <td>04/Jul/2022</td>
+                        <td>10</td>
+                        <td>75</td>
+                        <td>34</td>
+                    </tr>
+                    <tr>
+                        <td>05/Jul/2022</td>
+                        <td>18</td>
+                        <td>120</td>
+                        <td>34</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>80</td>
+                        <td>39</td>
+                        <td>83</td>
+                    </tr>
+                </table>
+            </hgroup>
+        </hgroup>
+    </body>
+</html>
