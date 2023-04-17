@@ -1,0 +1,39 @@
+<style>
+    p{
+        background-color: black;
+        margin: 25px 50px;
+        text-align: center;
+        text-indent: 50px;
+        line-height: 2;
+    }
+    #parrafoEspecial {
+        background-color: darkblue;
+        color: white;
+        text-align: justify;
+        text-transform: uppercase;   
+        font-family: "Mr Dafoe", cursive;
+    }
+    #miCuadro {
+        border: 5px solid black;
+    }
+    #miCuadro th,#miCuadro td{
+        border: 10px dotted grey;
+    }
+    .alterno {
+        background-color: gray;
+    }
+    h1:hover,h2:hover,h3:hover {
+        color: rgb(255, 0, 0);
+        background-color: lightgoldenrodyellow;
+        text-transform: uppercase;
+        text-shadow: #FF5733 5px 5px 3px;
+    }
+    #miCuadro th:hover, #miCuadro td:hover {
+        background-color: lightgreen;
+        color: black;
+    }
+    td:hover, td:hover {
+        background-color: lightskyblue;
+        color: black;
+    }
+</style> 

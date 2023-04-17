@@ -1,0 +1,107 @@
+
+    body{
+        color: gold;
+    }
+    .grupo_1{
+        color: darkgreen;
+    }
+    #listaU{
+        color: magenta;
+    }
+    #item_1{
+        color: red;
+    }
+    #item_2{
+        color: blue;
+    }
+    #item_3{
+        color: yellow;
+    }
+    #item_4{
+        color: green;
+    }
+    #link_1{
+        text-decoration: overline;
+    }
+    #link_2{
+        text-decoration: none;
+    }
+    #link_3{
+        text-decoration: line-through;
+    }
+    #link_4{
+        text-decoration: under line;
+    }
+    #link_5{
+        text-decoration: underline;
+    }
+    p{
+        background-color: black;
+        margin: 25px 50px;
+        text-align: center;
+        text-indent: 50px;
+        line-height: 2;
+    }
+    #parrafoEspecial_1{
+        background-color: darkblue;
+        color: white;
+        text-align: justify;
+        text-transform: uppercase;   
+    }
+    #parrafoEspecial_2{
+        text-decoration: overline;
+        font-family: 'Italianno', cursive;
+    }
+    #parrafoEspecial_3{
+    text-decoration: line-through;
+    }
+    #parrafoEspecial_4{
+        text-decoration: underline;
+    }
+    #Tabla_1{
+        color: black;
+    }
+    #miCuadro th,#miCuadro td{
+        border: 10px dotted grey;
+    }
+    .alterno {
+        background-color: gray;
+    }
+    h1:hover,h2:hover,h3:hover {
+        color: rgb(255, 0, 0);
+        background-color: lightgoldenrodyellow;
+        text-transform: uppercase;
+        text-shadow: #FF5733 5px 5px 3px;
+    }
+    #miCuadro th:hover, #miCuadro td:hover {
+        background-color: lightgreen;
+        color: black;
+    }
+    .grupo_2{
+        color: black;
+        font-family: 'Italianno', cursive;
+    }
+    .color_1-1{ background-color: rgb(255, 0, 0); }
+    .color_1-2{ background-color: rgb(255, 64, 0);}
+    .color_1-3{ background-color: rgb(255, 128, 0);}
+    .color_1-4{ background-color: rgb(255, 191, 0);}
+    .color_2-1{ background-color: rgb(255, 255, 0); }
+    .color_2-2{ background-color: rgb(191, 255, 0);}
+    .color_2-3{ background-color: rgb(128, 255, 0);}
+    .color_2-4{ background-color: rgb(64, 255, 0);}
+    .color_3-1{ background-color: rgb(0, 255, 0);}
+    .color_3-2{ background-color: rgb(0, 255, 64);}
+    .color_3-3{ background-color: rgb(0, 255, 128);}
+    .color_3-4{ background-color: rgb(0, 255, 191);}
+    .color_4-1{ background-color: rgb(0, 255, 255);}
+    .color_4-2{ background-color: rgb(0, 191, 255);}
+    .color_4-3{ background-color: rgb(0, 128, 255);}
+    .color_4-4{ background-color: rgb(0, 64, 255);}
+    .color_5-1{ background-color: rgb(0, 0, 255);}
+    .color_5-2{ background-color: rgb(64, 0, 255);}
+    .color_5-3{ background-color: rgb(128, 0, 255);}
+    .color_5-4{ background-color: rgb(191, 0, 255);}
+    .color_6-1{ background-color: rgb(255, 0, 255);}
+    .color_6-2{ background-color: rgb(255, 0, 191);}
+    .color_6-3{ background-color: rgb(255, 0, 128);}    
+    .color_6-4{ background-color: rgb(255, 0, 64);}
