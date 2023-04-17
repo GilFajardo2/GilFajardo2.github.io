@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!--
+    Nombre: Jose Gilberto Fajardo Zapata
+    Materia: Programacion 1
+    Fecha: 30/Marzo/2023
+    Descripcion: Estilo CSS   
+-->
+<html>
+    <head>      
+        <title>Unidad 02-Ejercicio 5</title>      
+        <meta charset="utf-8">
+        <meta name="author" content="Jose Gilberto Fajardo Zapata">
+        <meta name="revised" content="Jueves 30 de Marzo del 2023">
+        <meta name="description" content="Estilo en etiquetas en encabezado (style)">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+        <style>
+            p{
+                background-color: black;
+                margin: 25px 50px;
+                text-align: center;
+                text-indent: 50px;
+                line-height: 2;
+            }
+            #parrafoEspecial {
+                background-color: darkblue;
+                color: white;
+                text-align: justify;
+                text-transform: uppercase;   
+                font-family: "Mr Dafoe", cursive;
+            }
+            #miCuadro {
+                border: 5px solid black;
+            }
+            #miCuadro th,#miCuadro td{
+                border: 10px dotted grey;
+            }
+            .alterno {
+                background-color: gray;
+            }
+            h1:hover,h2:hover,h3:hover {
+                color: rgb(255, 0, 0);
+                background-color: lightgoldenrodyellow;
+                text-transform: uppercase;
+                text-shadow: #FF5733 5px 5px 3px;
+            }
+            #miCuadro th:hover, #miCuadro td:hover {
+                background-color: lightgreen;
+                color: black;
+            }
+            td:hover, td:hover {
+                background-color: #87cefa;
+                color: black;
+                font-size: 20px;
+            }
+            .dinamico li:first-child{
+                background-color: black; color: limegreen;
+            }
+            .dinamico li:nth-child(even){
+                background-color: crimson; color: white;
+            }
+            .dinamico li:last-child{
+                background-color: limegreen; color: black;
+            }
+            #miTabla tr:nth-child(even){
+                background-color: lightpink; color: black;
+            }
+            #miTabla tr:nth-child(odd){
+                background-color: lightgreen; color: black;
+            }
+        </style> 
+    </head>
+    <body style="color: gold;">
+        <hgroup style="color: darkgreen;">
+            <h1>CSS</h1>
+            <h2>Estilo en etiquetas</h2><a href=""></a>
+            <ul style="color: magenta; ">
+                <li style="color: red;"><a href="#" style="text-decoration: overline;">Inicio</a></li>
+                <li style="color: blue;"><a href="#" style="text-decoration: none;">Aspirantes</a></li>
+                <li style="color: yellow;"><a href="#" style="text-decoration: line-through;">Alumnos</a></li>
+                <li style="color: green;"><a href="#" style="text-decoration: underline line-through;">Docentes</a></li>
+                <li><a href="#" style="text-decoration: underline;">Administrativos</a></li>
+            </ul>
+        </hgroup>
+        <hgroup>
+            <h2>Estilo en encabezado</h2>
+            <p style="background-color: darkblue ;color: white; text-decoration: none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt urna sapien, eu rutrum ex semper vel. Sed quis nulla neque. Nunc dapibus condimentum tincidunt. Proin finibus convallis maximus. Proin volutpat quam mi, ultrices porta nunc semper ac. Proin ipsum sem, egestas non velit vitae, sodales posuere nisi. Vivamus fringilla est quam, id blandit lectus pretium sit amet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur mollis nibh et eros pellentesque pretium. Donec eget justo dui. Ut ante nibh, scelerisque ut augue sit amet, consequat accumsan nibh.</p>
+            <p style="text-decoration: overline; font-family: 'Italianno', cursive;">Proin non rhoncus purus. Sed pharetra, lectus quis iaculis blandit, turpis tortor pharetra ipsum, id hendrerit erat ex in arcu. Vivamus pellentesque diam ut ligula posuere, eget accumsan nisl consequat. Nunc augue lorem, consequat eu sagittis ac, mattis nec purus. Proin tempus sed odio eleifend porttitor. Aliquam ultricies enim ut felis congue vestibulum ac vitae ipsum. In ut turpis ut enim cursus eleifend. Etiam in faucibus justo. Ut ac tortor sed orci congue egestas eu in dui. Praesent a malesuada tortor, nec venenatis lectus. Sed vehicula nec magna vel commodo. Quisque in pulvinar lectus. Sed ultricies ultrices hendrerit. In hac habitasse platea dictumst. Fusce tincidunt condimentum ante, vitae dapibus lectus tincidunt et. Cras cursus rutrum iaculis.</p>
+            <p style="text-decoration: line-through;">Etiam in felis purus. Cras porttitor mollis diam at posuere. Curabitur et lorem in felis pellentesque commodo vitae a mi. Phasellus ac felis in ipsum commodo interdum et in orci. Sed eros nunc, mattis et magna in, sodales vestibulum felis. Sed at magna non justo dignissim finibus. Proin mauris dui, sagittis id mi vitae, dapibus pulvinar magna. Proin quis tristique libero.</p>
+            <p style="text-decoration: underline;">Nunc a sollicitudin neque. Donec dolor quam, sagittis vitae ultrices sollicitudin, feugiat id augue. Praesent ullamcorper rutrum quam, sit amet rhoncus ligula auctor id. Donec ac eros turpis. Donec tortor nibh, venenatis quis faucibus eget, lacinia quis risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus sodales ex, ut porttitor diam vestibulum sodales. Sed euismod dolor ac ante ullamcorper ultrices. Vestibulum lacinia vulputate mauris.</p>
+        </hgroup>
+        <hgroup>
+            <h2>Estilo con selectores</h2>
+            <table id="miTabla" border="5">
+                <tr>
+                    <th></th>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>C</th>
+                    <th>D</th>
+                    <th>E</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>   
+        </hgroup>
+        <hgroup>
+            <table style="color: black; font-family: 'Noto Sans', sans-serif;">
+                <tbody>
+                  <tr>
+                    <th colspan="4">Cuadro de colores</th>
+                  </tr>
+                  <tr>
+                    <td style="background-color: rgb(255, 0, 0);">0º rgb(255,0,0)</td>
+                    <td style="background-color: rgb(255, 64, 0);">15º rgb(255,64,0)</td>
+                    <td style="background-color: rgb(255, 128, 0);">30º rgb(255,128,0)</td>
+                    <td style="background-color: rgb(255, 191, 0);">45º rgb(255,191,0)</td>
+                  </tr>
+                  <tr>
+                    <td style="background-color: rgb(255, 255, 0);">60º rgb(255,255,0)</td>
+                    <td style="background-color: rgb(191, 255, 0);">75º rgb(191,255,0)</td>
+                    <td style="background-color: rgb(128, 255, 0);">90º rgb(128,255,0)</td>
+                    <td style="background-color: rgb(64, 255,0);">105º rgb(64,255,0)</td>
+                  </tr>
+                  <tr>
+                    <td style="background-color: rgb(0, 255, 0);">120º rgb(0,255,0)</td>
+                    <td style="background-color: rgb(0, 255, 64);">135º rgb(0,255,64)</td>
+                    <td style="background-color: rgb(0, 255, 128);">150º rgb(0,255,128)</td>
+                    <td style="background-color: rgb(0, 255, 191);">165º rgb(0,255,191)</td>
+                  </tr>
+                  <tr>
+                    <td style="background-color: rgb(0, 255, 255);">180º rgb(0,255,255)</td>
+                    <td style="background-color: rgb(0, 191, 255);">195º rgb(0,191,255)</td>
+                    <td style="background-color: rgb(0, 128, 255);">210º rgb(0,128,255)</td>
+                    <td style="background-color: rgb(0, 64, 255);">225º rgb(0,64,255)</td>
+                  </tr>
+                  <tr>
+                    <td style="background-color: rgb(0, 0, 255);">240º rgb(0,0,255)</td>
+                    <td style="background-color: rgb(64, 0, 255);">255º rgb(64,0,255)</td>
+                    <td style="background-color: rgb(128, 0, 255);">270º rgb(128,0,255)</td>
+                    <td style="background-color: rgb(191, 0, 255);">285º rgb(191,0,255)</td>
+                  </tr>
+                  <tr>
+                    <td style="background-color: rgb(255, 0, 255);">300º rgb(255,0,255)</td>
+                    <td style="background-color: rgb(255, 0, 191);">315º rgb(255,0,191)</td>
+                    <td style="background-color: rgb(255, 0, 128);">330º rgb(255,0,128)</td>
+                    <td style="background-color: rgb(255, 0, 64);">345º rgb(255,0,64)</td>
+                  </tr>
+                </tbody>
+                </table>
+        </hgroup>
+        <hgroup>
+            <h2>Lista con estilo dinamico</h2>
+            <ul class="dinamico">
+                <li>Primero</li>
+                <li>Segundo</li>
+                <li>Tercero</li>
+                <li>Cuarto</li>
+                <li>Quinto</li>
+                <li>Sexto</li>
+                <li>Septimo</li>
+                <li>Octavo</li>
+                <li>Noveno</li>
+            </ul>
+        </hgroup>
+    </body>
+</html>
