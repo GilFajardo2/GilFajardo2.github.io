@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+    Nombre: Jose Gilberto Fajardo Zapata
+    Materia: Programacion 1
+    Fecha: 08/02/2023
+    Descripcion: Tareas Modulo 4
+-->
+<html>
+    <head>      
+        <title>Unidad 03 - Ejercicio 05</title>      
+        <meta charset="utf-8">
+        <meta name="author" content="Jose Gilberto Fajardo Zapata">
+        <meta name="revised" content="Viernes, 02 de Mayo de 2023">
+        <meta name="description" content=""> 
+        <style>
+            .Tit {background-color: black; color: aqua;}
+        </style>
+    </head>
+    <body>
+      <h1 class="Tit">JavaScript - Operadores e Interaccion con el ususario</h1>
+      <script>
+        /* 4.1.1.11 Tareas: Condicionales */
+        let varNum = prompt("Introduce el valor para jugar...");
+
+        varNum = varNum ? varNum : "0";
+
+        /* 4.1.1.11 Tarea No.1 */
+        if (varNum > 90 && varNum < 110) { alert("Bingo!!"); }
+        else {alert("Fallaste!!");}
+
+        /* 4.1.1.11 Tarea No.2 */
+        let varResult = (varNum > 90 && varNum < 110) ? "Loteria!!!" : "Perdiste!!";
+        alert(varResult);
+
+        varResult = (varNum > 90) ? ((varNum < 110) ? "Loteria :)" : "Perdiste, el valor debe ser menor! :(") : "Perdiste, el valor debe de ser mayor!!";
+        alert(varResult);
+        /*
+        let varResult = (varNum > 90 && varNum < 110) ? true : false;
+        
+        if (varResult) {alert("Loteria :)"); }
+        else {varResult("Perdiste :(");}
+        */
+
+        let varNum1 = Number(prompt("Valor del primer operando: "));
+        let varNum2 = Number(prompt("Valor del segundo operando: "));
+        let varOp = prompt("Operacion a realizar (+ ,- ,* ,/):");
+
+        //varNum1 = Number.parseInt(varNum1, 10);
+        //varNum2 = Number.parseInt(varNum2, 10);
+
+        let varRes = "";
+
+        if(Number.isNaN(varNum1) || Number.isNaN(varNum2)) {
+            varRes = "Los operadores deben ser numeros...";
+        }else{
+            switch(varOp){
+                case '+': varRes = "El resultado de (" + varNum1 + " + " + varNum2 + ") es igual a: " +(varNum1 + varNum2); break;
+                case '-': varRes = "El resultado de (" + varNum1 + " - " + varNum2 + ") es igual a: " +(varNum1 - varNum2); break;
+                case '*': varRes = "El resultado de (" + varNum1 + " * " + varNum2 + ") es igual a: " +(varNum1 * varNum2); break;
+                case '/': varRes = "El resultado de (" + varNum1 + " / " + varNum2 + ") es igual a: " +(varNum1 / varNum2); break;
+                default : varRes = "Operacion incorrecta...";
+                }
+        }
+
+        alert(varRes);
+      </script>
+    </body>
+</html>
