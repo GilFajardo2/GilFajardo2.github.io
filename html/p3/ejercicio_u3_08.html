@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!--
+    Nombre: Jose Gilberto Fajardo Zapata
+    Materia: Programacion 1
+    Fecha: 08/02/2023
+    Descripcion: Tareas Modulo 4
+-->
+<html>
+    <head>      
+        <title>Unidad 03 - Ejercicio 08</title>      
+        <meta charset="utf-8">
+        <meta name="author" content="Jose Gilberto Fajardo Zapata">
+        <meta name="revised" content="Miercoles, 12 de Mayo de 2023">
+        <meta name="description" content="for, do, while"> 
+        <style>
+            .Tit {background-color: black; color: aqua;}
+        </style>
+    </head>
+    <body onload="if(!confirm('Deseas haceptar las cookies del sitio')) window.location='http://www.google.com.mx'">
+      <h1 class="Tit">JavaScript - Funciones y eventos</h1>
+      <h2>JavaScript contenido en una etiqueta</h2>
+      <button onclick="document.body.style.backgroundColor = 'lightblue';"
+      ondblclick="document.body.style.backgroundColor = 'lightgreen'">Cambia color de fondo...</button>
+
+      <h2>JavaScript contenido en una funcion</h2>
+      <button id="btnColor">Cambiar color</button>
+      <script>
+        let button = document.getElementById("btnColor");
+        function funColor_A(){
+            document.body.style.backgroundColor = 'lavander';
+        }
+        function funColor_B(){
+            document.body.style.backgroundColor = 'pink';
+        }
+        
+        button.addEventListener('click', funColor_A);
+        button.addEventListener('dbclick', funColor_B);
+        /*Modo avanzado/optimizado*/
+        document.getElementById("btnSaludar").addEventListener('click', () => {
+            alert("Hola a todos!!\n\n");
+        });
+      </script>
+        <h2>Eventos de mouse</h2>
+        <p style="background-color: blue;" onmouseover="alert('Acabas de entrar al parrafo...');"
+        onmouseout="alert('acabas de salir del parrafo...'); ">
+            Puedes pasar por encima del parrafo, salir del parrafo<br>
+            o hacer click sobre el parrafo... 
+        </p>
+        <h2>Formulario con JavaScript</h2>
+        <label>Nombre</label>
+        <input type="text" placeholder="(nombre)" id="varNombre">
+        <input type="button" value="Accion" onclick="let varMensaje ='hola ' + 
+            document.getElementById('varNombre').value + ', Como estas???';
+            document.getElementById('varResultado').value=varMensaje; alert(varMensaje);">
+        <br>
+        <label>Resultado:</label>
+        <input type="text" placeholder="(Resultado)" id="varResultado" readonly>
+
+        <h2>Tabla de Superficie y Volumen</h2>
+        <table border="3">
+            <tr>
+                <th>FIGURA</th>
+                <th>VARIABLES</th>
+                <th>RESULTADO</th>
+            </tr>
+            <tr>
+                <th>Cuadrado</th>
+                <td rowspan="2">Lado<input type="number" id="varLado"></td>
+                <td>
+                    Area: 
+                    <input type="number" id="varAreaCuadrado" readonly>
+                    <input type="button" id="Calcular" 
+                        onclick="document.getElementById('varAreaCuadrado').value =
+                        document.getElementById('varLado').value ** 2;">
+                </td>
+            </tr>
+            <tr>
+                <th>Cubo</th>
+            </tr>
+            <tr>
+                <th>Cubo</th>
+                <td>
+                    Volumen:
+                    <input type="number" id="">
+                    <input type="button">
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2">Rectangulo</td>
+                <td>Base:<input type="number" id="varBase"></td>
+                <td rowspan="2">
+                    Area:
+                    <input type="number" id="varAreaRectangulo" readonly>
+                    <input type="button" value="Calcular" 
+                    onclick="document.getElementById('varArea').value = 
+                    document.getElementById('varBase').value * document.getElementById('varAltura').value;">
+                </td>
+            </tr>
+            <tr>
+                <td>Altura: <input type="number" id="varAltura"></td>
+            </tr>
+            <tr>
+                <td>Prisma</td>
+                <td>Profundidad: <input type="number" id="varProfundidad"></td>
+                <td>
+                    Volumen:
+                    <input type="number" id="varVolumen" readonly>
+                    <input type="button" value="Calcular"
+                        onclick="document.getElementById('varVolumen').value = 
+                        document.getElementById('varBase').value * document.getElementById('varAltura').value;
+                        document.getElementById('varVolumenPrisma').value =
+                        document.getElementById('varAreaRectangulo').value * document.getElementById('varProfundidad').value;">
+                </td>
+            </tr>
+        </table>
+        <h2>Geolocalizacion</h2>
+        <button onclick="getlocation()">Obtener Coordenadas</button>
+        <p id="data">Coordenadas: </p>
+        <p id="mapa"></p>
+        <script>
+            function getlocation() {
+                if (navigator.geolocation) { navigator.geolocation.getCurrentPosition(showPosition);}
+                else { alert("Geolocalizacion no soportada por el navegador...");}
+            }     
+            function showPosition(position){
+                document.getElementById("data").innerHTML = "Latitud: " + position.coords.latitude;
+                document.getElementById("data").innerHTML += "<br>Longitud: " + position.coords.longitude;
+                var LatLon  = position.coords.latitude + "," + position.coords.longitude;
+                //LatLon = ''
+                var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="+ LatLon +
+                "&zoom=14&size=400x300&sensor=false&key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg";
+                document.getElementById("mapa").innerHTML = "<img src='" + img_url + "'>";
+            }
+        </script>
+        <br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29572.587515336716!2d-100.99582642387367!3d22.10410163454124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842a9f5412c6b56f%3A0xe1b3dea4c6aa1c03!2sUniversidad%20Polit%C3%A9cnica%20de%20San%20Luis%20Potos%C3%AD!5e0!3m2!1ses!2smx!4v1684348519269!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h2>Almacenamiento</h2>
+        <button onclick="aumentaContador_1()">Contador No.1</button>
+        <label>Contador No.1: </label>
+        <input type="number" readonly id="varContador_1" placeholder="(Contador No.1)">
+        <br>
+        <button onclick="aumentaContador_2()">Contador No.2</button>
+        <label>Contador No.2: </label>
+        <input type="number" readonly id="varContador_2" placeholder="(Contador No.2)">
+        <script>
+            function aumentaContador_1(){
+                if(typeof(Storage) != "undefined") {
+                if(localStorage.contador_1) {localStorage.contador_1++;}
+                else {localStorage.contador_1 = 1;}
+                document.getElementById('varContador_1').value = localStorage.contador_1;
+                }
+                else{
+                    alert("Almacenamiento no soportado por el navegador...");
+                }
+            }
+            
+            function aumentaContador_2(){
+                if(typeof(Storage) != "undefined"){
+                    if(sessionStorage.contador_2) {sessionStorage.contador_2++;}
+                    else {sessionStorage.contador_2 = 1;}
+                    document.getElementById('varContador_2').value = localStorage.contador_2;
+                }else{
+                    alert("Almacenamiento no soportado por el navegador...");
+                }
+
+                }
+        </script>
+    </body>
+</html>
