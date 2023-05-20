@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+    Nombre: Jose Gilberto Fajardo Zapata
+    Materia: Programacion 1
+    Fecha: 05/05/2023
+    Descripcion: Examen Parcial 2
+-->
+<html>
+    <head>      
+        <title>Unidad 03 - Ejercicio 05</title>      
+        <meta charset="utf-8">
+        <meta name="author" content="Jose Gilberto Fajardo Zapata">
+        <meta name="revised" content="Viernes, 05 de Mayo de 2023">
+        <meta name="description" content="prompt y alert"> 
+        <style>
+            .Tit {background-color: black; color: aqua;}
+        </style>
+    </head>
+    <body>
+      <h1 class="Tit">JavaScript - Operadores e Interaccion con el ususario</h1>
+      <script>
+          let varAnchura = prompt("Introduce el valor para la anchura de la caja...", "20");
+          let varAltura = prompt("Introduce el valor para la altura de la caja...", "10");
+          let varLongitud = prompt("Introduce el valor para la longitud en la caja...", "50");
+
+          let bandAncho , bandAlto , bandLargo;
+          let strError = "Los siguientes valores no son correctos: ";
+
+          bandAncho = varAnchura ? true : false;
+          bandAlto = varAltura ? true : false;
+          bandLargo = varLongitud ? true : false;
+
+          if(!bandAncho)
+            strError += "\n - Ancho";
+          if(!bandAlto)
+            strError += "\n - Alto"
+          if(!bandLargo)
+            strError += "\n - Largo"
+
+          if(bandAncho && bandAlto && bandLargo)
+            alert("El volumen de la caja es de: " + (varAnchura*varAltura*varLongitud) + " Unidades cubicas.");
+          else
+            alert(strError);
+      </script>
+    </body>
+</html>
