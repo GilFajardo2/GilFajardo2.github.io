@@ -2428,8 +2428,8 @@ input, select, textarea {
 			.imagen{
 				align-items: center;
 
-				width: 900px;
-				height: 450px;
+				width: 103%;
+				height: 40%;
 			}
 
 /* Button */
