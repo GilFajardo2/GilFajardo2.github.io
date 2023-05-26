@@ -62,12 +62,8 @@ mark {
 	color: inherit;
 }
 
-input::-moz-focus-inner {
-	border: 0;
-	padding: 0;
-}
 
-input, select, textarea {
+select, textarea {
 	-moz-appearance: none;
 	-webkit-appearance: none;
 	-ms-appearance: none;
@@ -2027,69 +2023,6 @@ input, select, textarea {
 			padding-top: 3em;
 		}
 
-/* Form */
-	input[type="text"],
-	input[type="password"],
-	input[type="email"],
-	textarea {
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		-ms-appearance: none;
-		appearance: none;
-		-moz-transition: border-color 0.2s ease-in-out;
-		-webkit-transition: border-color 0.2s ease-in-out;
-		-ms-transition: border-color 0.2s ease-in-out;
-		transition: border-color 0.2s ease-in-out;
-		background: #fff;
-		border: solid 1px #e0e0e0;
-		border-radius: 5px;
-		color: inherit;
-		display: block;
-		outline: 0;
-		padding: 0.75em;
-		text-decoration: none;
-		width: 100%;
-	}
-
-		input[type="text"]:focus,
-		input[type="password"]:focus,
-		input[type="email"]:focus,
-		textarea:focus {
-			border-color: #37c0fb;
-		}
-
-	input[type="text"],
-	input[type="password"],
-	input[type="email"] {
-		line-height: 1em;
-	}
-
-	label {
-		display: block;
-		color: inherit;
-		font-weight: 600;
-		line-height: 1.75em;
-		margin-bottom: 0.5em;
-	}
-
-	::-webkit-input-placeholder {
-		color: #999;
-		position: relative;
-		top: 3px;
-	}
-
-	:-moz-placeholder {
-		color: #999;
-	}
-
-	::-moz-placeholder {
-		color: #999;
-	}
-
-	:-ms-input-placeholder {
-		color: #999;
-	}
-
 /* Image */
 
 	.image {
@@ -3803,5 +3736,53 @@ input, select, textarea {
   .score-separator {
 	margin: 0 5px;
   }
+
+  .faq {
+	width: 300px;
+	margin: 20px auto;
+  }
   
+  .faq {
+	width: 300px;
+	margin: 20px auto;
+  }
+  
+  .faq {
+	width: 300px;
+	margin: 20px auto;
+  }
+  
+  .faq {
+	width: 900px;
+	margin: 20px auto;
+  }
+  
+  summary {
+	cursor: pointer;
+	outline: none;
+	padding: 15px;
+	background-color: #f1f1f1;
+	border: 1px solid #ccc;
+	font-weight: bold;
+	word-wrap: break-word; 
+  }
+  
+  details[open] summary {
+	background-color: #e1e1e1;
+  }
+  
+  .answer {
+	background-color: #f9f9f9;
+	border: 1px solid #ccc;
+	padding: 10px;
+	word-wrap: break-word; /* Nueva propiedad para ajustar el texto */
+	font-size: small;
+  }
+  
+*{
+	box-sizing: border-box;
+}
+  
+
+
 
