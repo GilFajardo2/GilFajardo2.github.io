@@ -65,3 +65,16 @@
 				});
 
 })(jQuery);
+
+const outerDetails = document.getElementById('outer-details');
+const innerDetails1 = document.getElementById('inner-details1');
+const innerDetails2 = document.getElementById('inner-details2');
+const innerDetails3 = document.getElementById('inner-details3');
+
+outerDetails.addEventListener('toggle', function() {
+  if (!outerDetails.open) {
+    innerDetails1.removeAttribute('open');
+	innerDetails2.removeAttribute('open');
+	innerDetails3.removeAttribute('open');
+  }
+});
