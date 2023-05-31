@@ -35,6 +35,103 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+
+    <script>
+        function resultado() {
+			var p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16, p17,
+            p18, p19, p20, nota;
+			
+			
+			if (document.getElementById('p14').checked==true) {p1=1}
+			if (p1==1) {document.querySelectorAll('.pregunta1')[3].style.color='#00FF00'}
+			else {p1=0}
+			
+			if (document.getElementById('p24').checked==true) {p2=1}
+			if (p2==1) {document.querySelectorAll('.pregunta2')[3].style.color='#00FF00'}
+			else {p2=0}
+			
+			if (document.getElementById('p31').checked==true) {p3=1}
+			if (p3==1) {document.querySelectorAll('.pregunta3')[0].style.color='#00FF00'}
+			else {p3=0}
+		
+			if (document.getElementById('p44').checked==true) {p4=1}
+			if (p4==1) {document.querySelectorAll('.pregunta4')[3].style.color='#00FF00'}
+			else {p4=0}
+
+            if (document.getElementById('p51').checked==true) {p5=1}
+			if (p5==1) {document.querySelectorAll('.pregunta5')[0].style.color='#00FF00'}
+			else {p5=0}
+
+            if (document.getElementById('p63').checked==true) {p6=1}
+			if (p6==1) {document.querySelectorAll('.pregunta6')[2].style.color='#00FF00'}
+			else {p6=0}
+
+            if (document.getElementById('p73').checked==true) {p7=1}
+			if (p7==1) {document.querySelectorAll('.pregunta7')[2].style.color='#00FF00'}
+			else {p7=0}
+
+            if (document.getElementById('p84').checked==true) {p8=1}
+			if (p8==1) {document.querySelectorAll('.pregunta8')[3].style.color='#00FF00'}
+			else {p8=0}
+
+            if (document.getElementById('p91').checked==true) {p9=1}
+			if (p9==1) {document.querySelectorAll('.pregunta9')[0].style.color='#00FF00'}
+			else {p9=0}
+
+            if (document.getElementById('p101').checked==true) {p10=1}
+			if (p10==1) {document.querySelectorAll('.pregunta10')[0].style.color='#00FF00'}
+			else {p10=0}
+
+            if (document.getElementById('p114').checked==true) {p11=1}
+			if (p11==1) {document.querySelectorAll('.pregunta11')[3].style.color='#00FF00'}
+			else {p11=0}
+
+            if (document.getElementById('p122').checked==true) {p12=1}
+			if (p12==1) {document.querySelectorAll('.pregunta12')[1].style.color='#00FF00'}
+			else {p12=0}
+
+            if (document.getElementById('p131').checked==true) {p13=1}
+			if (p13==1) {document.querySelectorAll('.pregunta13')[0].style.color='#00FF00'}
+			else {p13=0}
+
+            if (document.getElementById('p142').checked==true) {p14=1}
+			if (p14==1) {document.querySelectorAll('.pregunta14')[1].style.color='#00FF00'}
+			else {p14=0}
+
+            if (document.getElementById('p151').checked==true) {p15=1}
+			if (p15==1) {document.querySelectorAll('.pregunta15')[0].style.color='#00FF00'}
+			else {p15=0}
+
+            if (document.getElementById('p164').checked==true) {p16=1}
+			if (p16==1) {document.querySelectorAll('.pregunta16')[3].style.color='#00FF00'}
+			else {p16=0}
+
+            if (document.getElementById('p174').checked==true) {p17=1}
+			if (p17==1) {document.querySelectorAll('.pregunta17')[3].style.color='#00FF00'}
+			else {p17=0}
+
+            if (document.getElementById('p184').checked==true) {p18=1}
+			if (p18==1) {document.querySelectorAll('.pregunta18')[3].style.color='#00FF00'}
+			else {p18=0}
+
+            if (document.getElementById('p193').checked==true) {p19=1}
+			if (p19==1) {document.querySelectorAll('.pregunta19')[2].style.color='#00FF00'}
+			else {p19=0}
+
+            if (document.getElementById('p201').checked==true) {p20=1}
+			if (p20==1) {document.querySelectorAll('.pregunta20')[0].style.color='#00FF00'}
+			else {p20=0}
+			
+			nota=p1+p2+p3+p4+p5+p6+p7+p8+p9+p10+p11+p12+p13+p14+p15+p16+p17+p18+p19+p20;
+
+            document.getElementById('resultado').innerHTML="Aciertos: "+nota;
+            if (rs==false) {document.forms[0].reset();location.reload()}
+            }
+    </script>
+
     <style>
         .efecto {
      height: 150%; font-size: 200%; transition: height 0.5s, font-size 0.5s;
@@ -69,7 +166,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-2 col-sm-0">
                     <div class="logo">
-                        <a href="index.html"><img src="assets/images/logo.png" alt="logo" /></a>
+                        <a href="index3.html"><img src="assets/images/coding.png" alt="logo" style="width: auto; height: 30px;"></a>
                     </div>
                 </div>
                 <div class="col-lg-8 col-sm-8 text-right pr-0">
@@ -108,8 +205,8 @@
 
     <div class="navbar-area">
         <div class="mobile-nav">
-            <a href="index.html" class="logo">
-                <img src="assets/images/logo.png" alt="logo" />
+            <a href="index3.html" class="logo">
+                <img src="assets/images/coding.png" style="width: auto; height: 30px;" alt="logo">
             </a>
         </div>
         <div class="main-nav">
@@ -117,7 +214,6 @@
                 <nav class="navbar navbar-expand-md navbar-light">
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                         <ul class="navbar-nav text-left">
-
                         </ul>
                     </div>
                 </nav>
@@ -180,10 +276,10 @@
     </section>
 
 
-    <section class="home-service-area pt-100 pb-70">
+    <section class="home-service-area pt-100 pb-70" id="Beneficios">
         <div class="container">
             <div class="section-title">
-                <span>Beneficios de ser un ingeniero</span>
+                <span> <p>Beneficios de ser un ingeniero</p> </span>
                 <h2>¿En que consiste ser un ingeniero de Software</h2>
                 <p>
                     Se unos de los constructores del futuro. La ingenieira de Software cambiara el mundo, cambialo tu.
@@ -578,7 +674,7 @@
 							<h3><a href="#">Lenguajes de programación</a></h3>
 							<div class="text"> Son herramientas fundamentales para el desarrollo de software. 
                                 Los lenguajes de programación más utilizados en la actualidad incluyen Java, Python, C++, C#, 
-                                JavaScript, Ruby, entre otros.
+                                JavaScript, Ruby, entre otros. <sup><a href="#Cita1">[1]</a></sup>
                                 </div>
 						</div>
 					</div>
@@ -593,7 +689,8 @@
 							<div class="text">Son herramientas que facilitan el desarrollo de 
                                 software, proporcionando un conjunto de herramientas integradas para el desarrollo, prueba y 
                                 depuración de código. Ejemplos de IDEs incluyen Eclipse, Visual Studio, NetBeans, IntelliJ IDEA, 
-                                entre otros.</div>
+                                entre otros.<sup><a href="#Cita1">[2]</a></sup>
+                            </div>
 						</div>
 					</div>
 					
@@ -606,7 +703,7 @@
 							<h3><a href="#">Sistemas de control de versiones</a></h3>
 							<div class="text"> Son herramientas que permiten el control y la gestión de 
                                 cambios en el código fuente de un software. Algunos ejemplos de sistemas de control de versiones 
-                                incluyen Git, SVN, Mercurial, entre otros.
+                                incluyen Git, SVN, Mercurial, entre otros. <sup><a href="#Cita1">[3]</a></sup>
                                 </div>
 						</div>
 					</div>
@@ -621,7 +718,8 @@
 							<div class="text"> Son herramientas que permiten la automatización de tareas 
                                 repetitivas en el proceso de desarrollo de software, como pruebas, compilación, despliegue, entre 
                                 otros. Algunos ejemplos de herramientas de automatización incluyen Jenkins, Travis CI, Ansible, 
-                                Chef, Puppet, entre otros</div>
+                                Chef, Puppet, entre otros. <sup><a href="#Cita1">[4]</a></sup>
+                            </div>
 						</div>
 					</div>
 					
@@ -724,7 +822,7 @@
             <div class="home-team-slider owl-carousel owl-theme">
                 <div class="single-team">
                     <div class="team-img">
-                        <img src="https://img.wattpad.com/6eeff06ff69d65913865d96078c2ddbbe3b2f6f6/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f6158557859636c656d59624f73413d3d2d3337333835393532392e313461343434363232383366663432393530383333353638363634372e6a7067?s=fit&w=720&h=720"
+                        <img src="assets/images/memes/memedios.jfif"
                             alt="team" />
                         <ul class="social">
                             <li>
@@ -773,7 +871,7 @@
 
                 <div class="single-team">
                     <div class="team-img">
-                        <img src="https://pbs.twimg.com/media/FaAxlTIXkAInye2.jpg:large" alt="team" />
+                        <img src="assets/images/memes/memes1.jfif" alt="team" />
                         <ul class="social">
                             <li>
                                 <a href="#" target="_blank"><i class='bx bxl-linkedin'></i></a>
@@ -796,7 +894,7 @@
                 </div>
                 <div class="single-team">
                     <div class="team-img">
-                        <img src="https://images3.memedroid.com/images/UPLOADED799/6184289bb7c58.jpeg" alt="team" />
+                        <img src="assets/images/memes/memes2.jfif" alt="team" />
                         <ul class="social">
                             <li>
                                 <a href="#" target="_blank"><i class='bx bxl-linkedin'></i></a>
@@ -819,7 +917,7 @@
                 </div>
                 <div class="single-team">
                     <div class="team-img">
-                        <img src="https://img.wattpad.com/208120825cc2288ba0c43aace25f16f4936195bd/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f6e58324d3542375a5a546d3247773d3d2d3337333835373530362e313461343434306133616438336436643931343539313538343833302e6a7067?s=fit&w=720&h=720"
+                        <img src="assets/images/memes/memes3.jfif"
                             alt="team" />
                         <ul class="social">
                             <li>
@@ -845,7 +943,7 @@
         </div>
         <br><br><br>
         <center>
-            <h1>Video de cómo empezar en la PROGRAMACIÓN</h1>
+            <h1 style="font-family: 'PT Sans Narrow', sans-serif;">Video de cómo empezar en la PROGRAMACIÓN</h1>
             <iframe width="1400" height="580" src="https://www.youtube.com/watch?v=MEuZICEDLJo" frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
@@ -853,106 +951,36 @@
     </section>
 
 
-    <section class="client-area ptb-100 bg-color">
+    <section class="client-area ptb-100 bg-color" id="Cita1" id="Cita2" id="Cita3">
         <div class="container">
             <div class="section-title">
-                <span>Testimonios</span>
-                <h2>Lo que nuestros clientes dicen de BestPoint</h2>
-                <p>Si todavia no estas convencido de que BestPoint es para ti, mira estos testimonios de nuestros
-                    clientes.</p>
+                <span>Ingenieria en Software</span>
+                <h2>Referencias</h2>
+                <p>Fuentes de informacion de apoyo para la investigacion</p>
             </div>
             <div class="client-wrap owl-carousel owl-theme">
                 <div class="single-client">
-                    <img src="assets/images/client/1.jpg" alt="img">
-                    <p>Me ha funcionado muy bien en mi negocio, es fácil de entender, muy completo, y
-                        me han ayudado en lo que he necesitado y lo mejor a muy buen precio.</p>
-                    <h3>Steven Jony</h3>
-                    <span>CEO of Company</span>
+                    <img src="assets/images/wikipedia.png" style="width: auto; height: 60px;" alt="img">
+                    <p>Ingenieria de Software</p>
+                    <h3>Wikipedia</h3>
+                    <span><a href="https://es.wikipedia.org/wiki/Ingenier%C3%ADa_de_software" target="_blank">https://es.wikipedia.org/wiki/Ingenier%C3%ADa_de_software</a></span>
                 </div>
                 <div class="single-client">
-                    <img src="assets/images/client/2.jpg" alt="img">
-                    <p>me permite organizar y darle seguimiento a mis gastos y a todas mis transacciones de manera
-                        simple y eficaz.
-                        El equipo de soporte al cliente siempre está ahí para ayudarte cuando más lo necesitas.</p>
-                    <h3>Omit Jacson</h3>
-                    <span>Company Founder</span>
+                    <img src="assets/images/unir_logo.jpg" alt="img" style="width: auto; height: 50px;">
+                    <p>Ingeniería de software: qué es, objetivos y funciones del ingeniero</p>
+                    <h3>UNIR, 2021</h3>
+                    <span><a href="https://mexico.unir.net/ingenieria/noticias/ingenieria-de-software-que-es-objetivos/" target="_blank">https://mexico.unir.net/ingenieria/noticias/ingenieria-de-software-que-es-objetivos/</a></span>
+                </div>
+                <div class="single-client">
+                    <img src="assets/images/teknei.jpeg" alt="img" style="width: auto; height: 50px;">
+                    <p>¿Qué es y qué utilidad tiene la Ingeniería de Software?</p>
+                    <h3>teknei</h3>
+                    <span><a href="https://www.teknei.com/2021/11/09/que-es-y-que-utilidad-tiene-la-ingenieria-de-software/" target="_blank">https://www.teknei.com/2021/11/09/que-es-y-que-utilidad-tiene-la-ingenieria-de-software/</a></span>
                 </div>
             </div>
         </div>
     </section>
 
-
-
-    <section class="home-contact-area bg-color ptb-100">
-        <div class="container">
-            <div class="section-title">
-                <span>Contactanos</span>
-                <h2>¡Háganos saber acerca de su idea para mejorar BestPoint!</h2>
-                <p>La parte mas importante de BestPoint es su comunidad y como nos fortalecemos entre todos
-                    para conseguir un mejor producto que mejore nuestro negocio y aumente nuestros ingresos.
-                </p>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-6 col-md-6">
-                    <div class="contact-img">
-                        <img src="assets/images/contact-img.png" alt="contact">
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="content">
-                        <form id="contactForm">
-                            <div class="row">
-                                <div class="col-lg-12 col-sm-12">
-                                    <div class="form-group">
-                                        <input type="text" name="name" id="name" class="form-control" required
-                                            data-error="Please enter your name" placeholder="Nombre" />
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-sm-12">
-                                    <div class="form-group">
-                                        <input type="email" name="email" id="email" class="form-control" required
-                                            data-error="Please enter your email" placeholder="Correo electronico" />
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-sm-12">
-                                    <div class="form-group">
-                                        <input type="text" name="phone_number" id="phone_number" required
-                                            data-error="Please enter your number" class="form-control"
-                                            placeholder="Numero de celular" />
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-sm-12">
-                                    <div class="form-group">
-                                        <input type="text" name="msg_subject" id="msg_subject" class="form-control"
-                                            required data-error="Please enter your subject" placeholder="Asunto" />
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-md-12">
-                                    <div class="form-group">
-                                        <textarea name="message" class="form-control" id="message" cols="30" rows="5"
-                                            required data-error="Write your message"
-                                            placeholder="Escribe un mensaje..."></textarea>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-md-12">
-                                    <button type="submit" class="default-btn page-btn box-btn">
-                                        Enviar <i class="fi fi-ss-avion-de-papel"></i>
-                                    </button>
-                                    <div id="msgSubmit" class="h3 text-center hidden"></div>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <br><br>
     <section>
         <center>
@@ -976,17 +1004,17 @@
                     Preguntas mas comunes
                 </p>
             </div>
-                <div class="col-lg-6">
+                <div>
                     <div class="choose-content">
                         <div class="faq-accordion">
                             <ul class="accordion">
                                 <li class="accordion-item">
-
+                                    
                                     <div class="icon">
                                         <i class="fi fi-sr-angle-right"></i>
                                     </div>
                                     <a class="accordion-title active" href="javascript:void(0)">
-                                        <i class="fi fi-sr-bookmark"></i>¿Por qué estudiar ingeniería en software?
+                                        <i class="fi fi-sr-bookmark"></i>1.- ¿Por qué estudiar ingeniería en software?
                                     </a>
                                     <p class="accordion-content show">
                                         Estudiar ingeniería en software te brinda una base sólida de conocimientos y
@@ -998,7 +1026,7 @@
                                         <i class="fi fi-sr-angle-right"></i>
                                     </div>
                                     <a class="accordion-title" href="javascript:void(0)">
-                                        <i class="fi fi-sr-bookmark"></i>¿Cuáles son las ventajas de estudiar ingeniería
+                                        <i class="fi fi-sr-bookmark"></i>2.- ¿Cuáles son las ventajas de estudiar ingeniería
                                         en software?
                                     </a>
                                     <p class="accordion-content">
@@ -1010,7 +1038,7 @@
                                         <i class="fi fi-sr-angle-right"></i>
                                     </div>
                                     <a class="accordion-title" href="javascript:void(0)">
-                                        <i class="fi fi-sr-bookmark"></i>¿Cuáles son las oportunidades de carrera en el
+                                        <i class="fi fi-sr-bookmark"></i>3.- ¿Cuáles son las oportunidades de carrera en el
                                         campo de la ingeniería de software?
                                     </a>
                                     <p class="accordion-content">
@@ -1024,7 +1052,7 @@
                                         <i class="fi fi-sr-angle-right"></i>
                                     </div>
                                     <a class="accordion-title" href="javascript:void(0)">
-                                        <i class="fi fi-sr-bookmark"></i>¿Cuál es la demanda laboral para los ingenieros
+                                        <i class="fi fi-sr-bookmark"></i>4.- ¿Cuál es la demanda laboral para los ingenieros
                                         en software?
                                     </a>
                                     <p class="accordion-content">
@@ -1037,7 +1065,7 @@
                                         <i class="fi fi-sr-angle-right"></i>
                                     </div>
                                     <a class="accordion-title" href="javascript:void(0)">
-                                        <i class="fi fi-sr-bookmark"></i>¿Cómo puede la ingeniería en software
+                                        <i class="fi fi-sr-bookmark"></i>5.- ¿Cómo puede la ingeniería en software
                                         contribuir al avance tecnológico?
                                     </a>
                                     <p class="accordion-content">
@@ -1050,7 +1078,7 @@
                                         <i class="fi fi-sr-angle-right"></i>
                                     </div>
                                     <a class="accordion-title" href="javascript:void(0)">
-                                        <i class="fi fi-sr-bookmark"></i>¿Cuáles son las habilidades que se pueden
+                                        <i class="fi fi-sr-bookmark"></i>6.- ¿Cuáles son las habilidades que se pueden
                                         desarrollar al estudiar ingeniería en software?
                                     </a>
                                     <p class="accordion-content">
@@ -1063,7 +1091,7 @@
                                         <i class="fi fi-sr-angle-right"></i>
                                     </div>
                                     <a class="accordion-title" href="javascript:void(0)">
-                                        <i class="fi fi-sr-bookmark"></i>¿Qué tipo de proyectos se pueden abordar como
+                                        <i class="fi fi-sr-bookmark"></i>7.- ¿Qué tipo de proyectos se pueden abordar como
                                         ingeniero en software?
                                     </a>
                                     <p class="accordion-content">
@@ -1076,7 +1104,7 @@
                                         <i class="fi fi-sr-angle-right"></i>
                                     </div>
                                     <a class="accordion-title" href="javascript:void(0)">
-                                        <i class="fi fi-sr-bookmark"></i>¿Cuál es el papel de un ingeniero en software
+                                        <i class="fi fi-sr-bookmark"></i>8.- ¿Cuál es el papel de un ingeniero en software
                                         en el desarrollo de aplicaciones y sistemas?
                                     </a>
                                     <p class="accordion-content">
@@ -1089,7 +1117,7 @@
                                         <i class="fi fi-sr-angle-right"></i>
                                     </div>
                                     <a class="accordion-title" href="javascript:void(0)">
-                                        <i class="fi fi-sr-bookmark"></i>¿Cómo puede la ingeniería en software impactar
+                                        <i class="fi fi-sr-bookmark"></i>9.- ¿Cómo puede la ingeniería en software impactar
                                         la sociedad y mejorar la calidad de vida?
                                     </a>
                                     <p class="accordion-content">
@@ -1102,7 +1130,7 @@
                                         <i class="fi fi-sr-angle-right"></i>
                                     </div>
                                     <a class="accordion-title" href="javascript:void(0)">
-                                        <i class="fi fi-sr-bookmark"></i>¿Qué tipo de tecnologías y lenguajes de
+                                        <i class="fi fi-sr-bookmark"></i>10.- ¿Qué tipo de tecnologías y lenguajes de
                                         programación se aprenden en la ingeniería en software?
                                     </a>
                                     <p class="accordion-content">
@@ -1115,7 +1143,7 @@
                                         <i class="fi fi-sr-angle-right"></i>
                                     </div>
                                     <a class="accordion-title" href="javascript:void(0)">
-                                        <i class="fi fi-sr-bookmark"></i>¿Cuáles son las perspectivas de crecimiento y
+                                        <i class="fi fi-sr-bookmark"></i>11.- ¿Cuáles son las perspectivas de crecimiento y
                                         desarrollo profesional en la ingeniería en software?
                                     </a>
                                     <p class="accordion-content">
@@ -1129,7 +1157,7 @@
                                         <i class="fi fi-sr-angle-right"></i>
                                     </div>
                                     <a class="accordion-title" href="javascript:void(0)">
-                                        <i class="fi fi-sr-bookmark"></i>¿Cuál es el potencial de salario para los
+                                        <i class="fi fi-sr-bookmark"></i>12.- ¿Cuál es el potencial de salario para los
                                         ingenieros en software?
                                     </a>
                                     <p class="accordion-content">
@@ -1142,7 +1170,7 @@
                                         <i class="fi fi-sr-angle-right"></i>
                                     </div>
                                     <a class="accordion-title" href="javascript:void(0)">
-                                        <i class="fi fi-sr-bookmark"></i>¿Cómo puede la ingeniería en software fomentar
+                                        <i class="fi fi-sr-bookmark"></i>13.- ¿Cómo puede la ingeniería en software fomentar
                                         la innovación y la creatividad?
                                     </a>
                                     <p class="accordion-content">
@@ -1155,7 +1183,7 @@
                                         <i class="fi fi-sr-angle-right"></i>
                                     </div>
                                     <a class="accordion-title" href="javascript:void(0)">
-                                        <i class="fi fi-sr-bookmark"></i>¿Cuál es el impacto de la ingeniería en
+                                        <i class="fi fi-sr-bookmark"></i>14.- ¿Cuál es el impacto de la ingeniería en
                                         software en la transformación digital de las empresas?
                                     </a>
                                     <p class="accordion-content">
@@ -1170,6 +1198,140 @@
                                         de resolución de problemas y fomentar la creatividad.
                                     </p>
                                 </li>
+
+                                <li class="accordion-item">
+                                    <div class="icon">
+                                        <i class="fi fi-sr-angle-right"></i>
+                                    </div>
+                                    <a class="accordion-title" href="javascript:void(0)">
+                                        <i class="fi fi-sr-bookmark"></i>15.- ¿Cuáles son las etapas del ciclo de vida del software?
+                                    </a>
+                                    <p class="accordion-content">
+                                        El ciclo de vida del software consta de etapas como análisis
+                                        de requisitos, diseño, implementación, pruebas, despliegue y mantenimiento.
+                                    </p>
+                                </li>
+
+                                <li class="accordion-item">
+                                    <div class="icon">
+                                        <i class="fi fi-sr-angle-right"></i>
+                                    </div>
+                                    <a class="accordion-title" href="javascript:void(0)">
+                                        <i class="fi fi-sr-bookmark"></i>16.- ¿Cuáles son las etapas del ciclo de vida del software?
+                                    </a>
+                                    <p class="accordion-content">
+                                        El ciclo de vida del software consta de etapas como análisis de requisitos
+                                        , diseño, implementación, pruebas, despliegue y mantenimiento.
+                                    </p>
+                                </li>
+
+                                <li class="accordion-item">
+                                    <div class="icon">
+                                        <i class="fi fi-sr-angle-right"></i>
+                                    </div>
+                                    <a class="accordion-title" href="javascript:void(0)">
+                                        <i class="fi fi-sr-bookmark"></i>17.- ¿Cuáles son las habilidades clave para un ingeniero de software?
+                                    </a>
+                                    <p class="accordion-content">
+                                        Algunas habilidades clave incluyen programación, resolución de problemas,
+                                         habilidades de comunicación, trabajo en equipo y capacidad de aprendizaje continuo.
+                                    </p>
+                                </li>
+
+                                <li class="accordion-item">
+                                    <div class="icon">
+                                        <i class="fi fi-sr-angle-right"></i>
+                                    </div>
+                                    <a class="accordion-title" href="javascript:void(0)">
+                                        <i class="fi fi-sr-bookmark"></i>18.- ¿Cuál es el papel de la documentación en la ingeniería de software?
+                                    </a>    
+                                    <p class="accordion-content">
+                                        La documentación en la ingeniería de software es crucial, ya que permite capturar y comunicar los requisitos, el diseño,
+                                         las decisiones tomadas y cualquier otra información relevante durante el desarrollo del software.
+                                    </p>
+                                </li>
+
+                                <li class="accordion-item">
+                                    <div class="icon">
+                                        <i class="fi fi-sr-angle-right"></i>
+                                    </div>
+                                    <a class="accordion-title" href="javascript:void(0)">
+                                        <i class="fi fi-sr-bookmark"></i>19.- ¿Cuáles son los enfoques de desarrollo de software más comunes?
+                                    </a>    
+                                    <p class="accordion-content">
+                                        Algunos enfoques comunes incluyen el modelo en cascada,
+                                        el modelo de desarrollo ágil (como Scrum o Kanban) y el enfoque de desarrollo iterativo.
+                                    </p>
+                                </li>
+
+                                <li class="accordion-item">
+                                    <div class="icon">
+                                        <i class="fi fi-sr-angle-right"></i>
+                                    </div>
+                                    <a class="accordion-title" href="javascript:void(0)">
+                                        <i class="fi fi-sr-bookmark"></i>20.- ¿Qué es la prueba de software y por qué es importante?
+                                    </a>    
+                                    <p class="accordion-content">
+                                        La prueba de software es el proceso de evaluación del software para encontrar errores y asegurar su calidad.
+                                        Es importante porque ayuda a identificar y corregir problemas antes de que el software se implemente en un entorno de producción.
+                                    </p>
+                                </li>
+
+                                <li class="accordion-item">
+                                    <div class="icon">
+                                        <i class="fi fi-sr-angle-right"></i>
+                                    </div>
+                                    <a class="accordion-title" href="javascript:void(0)">
+                                        <i class="fi fi-sr-bookmark"></i>21.- ¿Cuál es el papel de la gestión de configuración en la ingeniería de software?
+                                    </a>    
+                                    <p class="accordion-content">
+                                        La gestión de configuración se encarga de controlar y gestionar los cambios realizados en el software,
+                                        incluyendo versiones, documentación y componentes relacionados, para garantizar la integridad
+                                        y la trazabilidad del sistema.
+                                    </p>
+                                </li>
+
+                                <li class="accordion-item">
+                                    <div class="icon">
+                                        <i class="fi fi-sr-angle-right"></i>
+                                    </div>
+                                    <a class="accordion-title" href="javascript:void(0)">
+                                        <i class="fi fi-sr-bookmark"></i>22.- ¿Qué es la arquitectura de software?
+                                    </a>    
+                                    <p class="accordion-content">
+                                        La arquitectura de software se refiere a la estructura y organización del sistema de software,
+                                        incluyendo los componentes, las relaciones entre ellos y los principios que guían su diseño.
+                                    </p>
+                                </li>
+
+                                <li class="accordion-item">
+                                    <div class="icon">
+                                        <i class="fi fi-sr-angle-right"></i>
+                                    </div>
+                                    <a class="accordion-title" href="javascript:void(0)">
+                                        <i class="fi fi-sr-bookmark"></i>23.- ¿Cuáles son los desafíos comunes en la ingeniería de software?
+                                    </a>    
+                                    <p class="accordion-content">
+                                        LAlgunos desafíos comunes incluyen la gestión de requisitos cambiantes,
+                                        la planificación y estimación del proyecto, la gestión del tiempo y los recursos,
+                                        y el mantenimiento del software a largo plazo.
+                                    </p>
+                                </li>
+
+                                <li class="accordion-item">
+                                    <div class="icon">
+                                        <i class="fi fi-sr-angle-right"></i>
+                                    </div>
+                                    <a class="accordion-title" href="javascript:void(0)">
+                                        <i class="fi fi-sr-bookmark"></i>25.- ¿Cuál es la diferencia entre el desarrollo de software y la ingeniería de software?
+                                    </a>    
+                                    <p class="accordion-content">
+                                        Si bien ambos términos están relacionados, la diferencia radica en su enfoque y alcance. El desarrollo de software se centra principalmente
+                                        en la codificación y la creación de programas y aplicaciones, mientras que la ingeniería de software abarca un enfoque más amplio que incluye
+                                        análisis de requisitos, diseño, pruebas, gestión del ciclo de vida del software y consideraciones de calidad y mantenimiento a largo plazo.
+                                        La ingeniería de software adopta un enfoque más sistemático y basado en principios de ingeniería para el desarrollo de software.
+                                    </p>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -1178,16 +1340,148 @@
         </div>
     </section>
 
-
+    <section>
+        <section class="home-company-area bg-color">
+            <div class="container">
+                <div>
+                    <div>
+                                                    <h2>T E S T</h2>
+													<hr>
+													<form style="font:normal 16px sans-serif">
+													<p>1.- ¿Cuál es el origen de la ingeniería de software?</p>
+													<p class="pregunta1"><input type="radio" name="pregunta1" id="p11"> Tiene origen con la industrialización a principios del siglo XX</p>
+													<p class="pregunta1"><input type="radio" name="pregunta1" id="p12"> La ingenieria en software tiene su origen a la hora de la salida del primer iphone</p>
+													<p class="pregunta1"><input type="radio" name="pregunta1" id="p13"> Tiene su origen con la creacion del navegador Google</p>
+													<p class="pregunta1"><input type="radio" name="pregunta1" id="p14"> La ingeniería de software tiene su origen en la década de 1960, cuando se empezaron a desarrollar sistemas de software más grandes y complejos que requerían una gestión más sistemática y eficiente.</p>
+													<br>
+													<p>2.- ¿Por qué se empezó a utilizar el término "ingeniería de software" en la década de 1960?</p>
+													<p class="pregunta2"><input type="radio" name="pregunta2" id="p21">Por que se parecian a otras tecnologias de ese entonces</p>
+													<p class="pregunta2"><input type="radio" name="pregunta2" id="p22">Ya que las nuevas tecnologias que iban surgiendo no tenian un nombre en especifico y se creo este nombre para poderlas identificarlas</p>
+													<p class="pregunta2"><input type="radio" name="pregunta2" id="p23">Ninguna</p>
+													<p class="pregunta2"><input type="radio" name="pregunta2" id="p24">Se empezó a utilizar el término "ingeniería de software" para describir el enfoque sistemático y disciplinado que se requería para producir software de alta calidad.</p>
+													<br>
+													<p>3.- ¿En qué se basa la ingeniería de software?</p>
+													<p class="pregunta3"><input type="radio" name="pregunta3" id="p31"> La ingeniería de software se basa en la aplicación de principios de ingeniería en el desarrollo y mantenimiento de software, utilizando métodos sistemáticos y disciplinados para diseñar, construir, probar y mantener el software.</p>
+													<p class="pregunta3"><input type="radio" name="pregunta3" id="p32"> Se enfoca a la creacion de nuevas tecnologias dirigidas a la industria automotriz</p>
+													<p class="pregunta3"><input type="radio" name="pregunta3" id="p33"> Se basa en la optimizacion de programas de edicion de videos</p>
+													<p class="pregunta3"><input type="radio" name="pregunta3" id="p34"> Se enfoca en la creacion de nuevas computadoras</p>
+													<br>
+													<p>4.- ¿Cuáles son las bases de la ingeniería de software?</p>
+													<p class="pregunta4"><input type="radio" name="pregunta4" id="p41"> La ingenieria en informatica, la fisica y la termodinamica</p>
+													<p class="pregunta4"><input type="radio" name="pregunta4" id="p42"> Las empresas de desarrollo de aplicaciones Web</p>
+													<p class="pregunta4"><input type="radio" name="pregunta4" id="p43"> El desarrolo de nuevas programas para resolver problemas matematicos</p>
+													<p class="pregunta4"><input type="radio" name="pregunta4" id="p44"> el uso de métodos sistemáticos y disciplinados, y el uso de herramientas y técnicas avanzadas para mejorar la eficiencia y calidad del desarrollo de software.</p>
+                                                    <br>
+													<p>5.- ¿Cuáles son las fases principales de la historia de la ingeniería de software?</p>
+													<p class="pregunta5"><input type="radio" name="pregunta5" id="p51"> la artesanal, industrial y de automatización.</p>
+													<p class="pregunta5"><input type="radio" name="pregunta5" id="p52"> la industrial, la ingenieria y las ciencias</p>
+													<p class="pregunta5"><input type="radio" name="pregunta5" id="p53"> la automatización y las matematicas</p>
+													<p class="pregunta5"><input type="radio" name="pregunta5" id="p54"> los programadores y las empresas</p>
+                                                    <br>
+													<p>6.- ¿Qué caracterizó a la fase artesanal de la ingeniería de software?</p>
+													<p class="pregunta6"><input type="radio" name="pregunta6" id="p61"> se caracterizó por la creacion de nuevas aplicaciones usando la ingenieria en software</p>
+													<p class="pregunta6"><input type="radio" name="pregunta6" id="p62"> se caracterizó por el desarrollo de nuevas tecnologias en las computadoras</p>
+													<p class="pregunta6"><input type="radio" name="pregunta6" id="p63"> se caracterizó por un desarrollo ad-hoc y sin enfoque sistemático.</p>
+													<p class="pregunta6"><input type="radio" name="pregunta6" id="p64"> se caracterizó por la revolucion de las tecnologias en los principios del siglo Xl</p>
+                                                    <br>
+													<p>7.- ¿Qué ocurrió durante la fase industrial de la ingeniería de software?</p>
+													<p class="pregunta7"><input type="radio" name="pregunta7" id="p71"> Se crearon nuevos metodos de programacion</p>
+													<p class="pregunta7"><input type="radio" name="pregunta7" id="p72"> Se crearon mas lenguajes de programacion para el desarrollo de nuevas tecnologias</p>
+													<p class="pregunta7"><input type="radio" name="pregunta7" id="p73"> Se desarrollaron métodos y procesos sistemáticos para producir software de alta calidad.</p>
+													<p class="pregunta7"><input type="radio" name="pregunta7" id="p74"> Se desarrollaron nuevas tecnologias para soportar los nuevos desarrollos de ese entonces</p>
+                                                    <br>
+													<p>8.- ¿Cuál es el objetivo de la ingeniería de software?</p>
+													<p class="pregunta8"><input type="radio" name="pregunta8" id="p81"> optimizar los robots en la industria</p>
+													<p class="pregunta8"><input type="radio" name="pregunta8" id="p82"> crear nuevos lenguajes de programacion</p>
+													<p class="pregunta8"><input type="radio" name="pregunta8" id="p83"> desarrollar nuevas tecnologias tomando las bases de la ingenieria en software</p>
+													<p class="pregunta8"><input type="radio" name="pregunta8" id="p84"> producir software de alta calidad de manera eficiente y sistemática, satisfaciendo las necesidades de los usuarios y clientes.</p>
+                                                    <br>
+													<p>9.- ¿Cuales son lenguajes de programacion?</p>
+													<p class="pregunta9"><input type="radio" name="pregunta9" id="p91"> Java, Phyton y C++</p>
+													<p class="pregunta9"><input type="radio" name="pregunta9" id="p92"> Windows, Linux y IOS</p>
+													<p class="pregunta9"><input type="radio" name="pregunta9" id="p93"> Android, Samsung y Huawei </p>
+													<p class="pregunta9"><input type="radio" name="pregunta9" id="p94"> Facebook, Instagram y Twitter</p>
+                                                    <br>
+													<p>10.- ¿Que son los entornos de desarrollo integrado?</p>
+													<p class="pregunta10"><input type="radio" name="pregunta10" id="p101"> Son herramientas que facilitan el desarrollo de software, proporcionando un conjunto de herramientas integradas para el desarrollo, prueba y depuración de código.</p>
+													<p class="pregunta10"><input type="radio" name="pregunta10" id="p102"> Son los cuartos donde un programador puede arams una computadora</p>
+													<p class="pregunta10"><input type="radio" name="pregunta10" id="p103"> Son almacenamientos donde un programador puede desarrollar codigo y compartirlo con mas porgramadores</p>
+													<p class="pregunta10"><input type="radio" name="pregunta10" id="p104"> Son entornos donde una inteligencia artificial procesa el codigo y lo intepreta</p>
+                                                    <br>
+                                                    <p>11.- Nombra algunos ejemplos de frameworks utilizados en el desarrollo de software.</p>
+													<p class="pregunta11"><input type="radio" name="pregunta11" id="p111"> Facebook, Instagra y Twitter</p>
+													<p class="pregunta11"><input type="radio" name="pregunta11" id="p112"> Phyton, JS, Swift</p>
+													<p class="pregunta11"><input type="radio" name="pregunta11" id="p113"> Notepad, VS y IDEC++</p>
+													<p class="pregunta11"><input type="radio" name="pregunta11" id="p114"> Angular, React, Spring y Django</p>
+                                                    <br>
+                                                    <p>12.- ¿Qué áreas se espera que sean clave en el desarrollo de software en el futuro?</p>
+													<p class="pregunta12"><input type="radio" name="pregunta12" id="p121"> Programacion</p>
+													<p class="pregunta12"><input type="radio" name="pregunta12" id="p122"> Inteligencia artificial y aprendizaje automático.</p>
+													<p class="pregunta12"><input type="radio" name="pregunta12" id="p123"> Automatizacion</p>
+													<p class="pregunta12"><input type="radio" name="pregunta12" id="p124"> Industrial</p>
+                                                    <br>
+                                                    <p>13.- ¿Cómo se espera que la computación en la nube transforme el desarrollo de software en el futuro?</p>
+													<p class="pregunta13"><input type="radio" name="pregunta13" id="p131"> Permitiendo mayor flexibilidad y escalabilidad en los procesos de desarrollo y distribución de software.</p>
+													<p class="pregunta13"><input type="radio" name="pregunta13" id="p132"> Almacenamiento ilimitado</p>
+													<p class="pregunta13"><input type="radio" name="pregunta13" id="p133"> Las computadoras consumiran menos energia y asi cuidaremos el medio ambiente</p>
+													<p class="pregunta13"><input type="radio" name="pregunta13" id="p134"> Se podran desarrollar nuevas tecnologias mas rapido</p>
+                                                    <br>
+                                                    <p>14.- ¿Por qué es importante el desarrollo sostenible de software en el futuro?</p>
+													<p class="pregunta14"><input type="radio" name="pregunta14" id="p141"> Para desarrollar tecnologias con menor consumo energetico</p>
+													<p class="pregunta14"><input type="radio" name="pregunta14" id="p142"> Para reducir el consumo de energía y recursos en el desarrollo y mantenimiento de software.</p>
+													<p class="pregunta14"><input type="radio" name="pregunta14" id="p143"> Para quitarle trabajo a los programadores</p>
+													<p class="pregunta14"><input type="radio" name="pregunta14" id="p144"> Ninguna</p>
+                                                    <br>
+                                                    <p>15.- ¿Qué fundamentos y técnicas se aprenden en el estudio de "Fundamentos de programación"?</p>
+													<p class="pregunta15"><input type="radio" name="pregunta15" id="p151"> Principios y técnicas fundamentales de programación, lenguajes de programación, estructuras de datos y algoritmos.</p>
+													<p class="pregunta15"><input type="radio" name="pregunta15" id="p152"> Intepretacion de lenguajes compilados y creacion de nuevas TI</p>
+													<p class="pregunta15"><input type="radio" name="pregunta15" id="p153"> Matematicas, Quimica y fisica</p>
+													<p class="pregunta15"><input type="radio" name="pregunta15" id="p154"> Mas lenguajes de programacion</p>
+                                                    <br>
+                                                    <p>16.- ¿Qué habilidades adquieren los estudiantes en el área de "Análisis y gestión de proyectos de software"?</p>
+													<p class="pregunta16"><input type="radio" name="pregunta16" id="p111"> Ninguna</p>
+													<p class="pregunta16"><input type="radio" name="pregunta16" id="p162"> Conseguir trabajo en las empresas mas grandes relacionadas con las TI</p>
+													<p class="pregunta16"><input type="radio" name="pregunta16" id="p163"> Poder resolver probleas matematicos mas rapidamente</p>
+													<p class="pregunta16"><input type="radio" name="pregunta16" id="p164">  Habilidades para analizar requisitos de clientes, gestionar proyectos de software y trabajar en equipo.</p>
+                                                    <br>
+                                                    <p>17.- ¿Qué se aprende en el estudio de "Desarrollo ágil de software"?</p>
+													<p class="pregunta17"><input type="radio" name="pregunta17" id="p171"> Poder resolver problemas logicos manualmente</p>
+													<p class="pregunta17"><input type="radio" name="pregunta17" id="p172"> Saber identificar operaciones matematicas</p>
+													<p class="pregunta17"><input type="radio" name="pregunta17" id="p173"> Ninguna</p>
+													<p class="pregunta17"><input type="radio" name="pregunta17" id="p174"> Uso de metodologías ágiles para desarrollar software de manera eficiente y rápida.</p>
+                                                    <br>
+                                                    <p>18.- ¿En qué industrias pueden trabajar los ingenieros de software?</p>
+													<p class="pregunta18"><input type="radio" name="pregunta18" id="p181"> Ninguna</p>
+													<p class="pregunta18"><input type="radio" name="pregunta18" id="p182"> Artes</p>
+													<p class="pregunta18"><input type="radio" name="pregunta18" id="p183"> Medicina, arquitectura y industria agropecuaria</p>
+													<p class="pregunta18"><input type="radio" name="pregunta18" id="p184"> Tecnología, banca, finanzas, salud, transporte, manufactura, entre otros.</p>
+                                                    <br>
+                                                    <p>19.- ¿Cuál es el rol más común en el ámbito de la ingeniería de software?</p>
+													<p class="pregunta19"><input type="radio" name="pregunta19" id="p191"> CEO</p>
+													<p class="pregunta19"><input type="radio" name="pregunta19" id="p192"> Fisico matematico</p>
+													<p class="pregunta19"><input type="radio" name="pregunta19" id="p193"> Desarrollador de software.</p>
+													<p class="pregunta19"><input type="radio" name="pregunta19" id="p194"> Director de planta</p>
+                                                    <br>
+                                                    <p>20.- ¿Qué función tiene un gerente de proyecto de software?</p>
+													<p class="pregunta20"><input type="radio" name="pregunta20" id="p201"> Coordinar y gestionar los equipos de desarrollo de software, asegurando el cumplimiento de plazos y presupuesto.</p>
+													<p class="pregunta20"><input type="radio" name="pregunta20" id="p202"> Desarrollas aplicaciones exclusivamente de IOS</p>
+													<p class="pregunta20"><input type="radio" name="pregunta20" id="p203"> Poder dirigir una empresa</p>
+													<p class="pregunta20"><input type="radio" name="pregunta20" id="p204"> Ninguna</p>
+                                                    <br>
+													<hr>
+													<h2 id="resultado">Aciertos: 0</h2>
+													<p><input type="button" value=" R E S U L T A D O " onclick="resultado()"/></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
 
     <footer class="footer-area pt-100">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <div class="content">
-                        <div class="logo">
-                            <a href="index.html"><img src="assets/images/logo2.png" alt="logo" /></a>
-                        </div>
                         <p>
                             "Los ingenieros no solo resuelven problemas, ¡construyen el futuro con cada diseño, cálculo
                             y creación!"
@@ -1197,17 +1491,6 @@
                             sistemas y estructuras. Los ingenieros utilizan principios matemáticos, físicos y técnicos
                             para resolver problemas y desarrollar soluciones innovadoras en diversas áreas.
                         </p>
-                        <div class="subscribe">
-                            <h4>Ingresa a la aventura</h4>
-                            <form class="newsletter-form" data-toggle="validator">
-                                <input type="email" id="emails" class="form-control" placeholder="Tu correo electronico"
-                                    name="EMAIL" required autocomplete="off">
-                                <button class="box-btn" type="submit">
-                                    Suscribete
-                                </button>
-                                <div id="validator-newsletter" class="form-result"></div>
-                            </form>
-                        </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -1236,7 +1519,7 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <ul class="menu">
-                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="index3.html">Inicio</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-6">
@@ -1278,4 +1561,4 @@
     <script src="assets/js/main.js"></script>
 </body>
 
-</html>
+</html> 
