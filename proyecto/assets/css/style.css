@@ -34,6 +34,7 @@ Default Style
 ============================*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 body {
   padding: 0;
   margin: 0;
@@ -937,7 +938,6 @@ Navbar Area Css
   position: absolute;
   width: 0;
   height: 0;
-  content: "";
   border-top: 0;
   border-right: 8px solid transparent;
   border-bottom: 8px solid #ffffff;
@@ -950,12 +950,10 @@ Navbar Area Css
 .navbar-area .main-nav .navbar .navbar-nav .nav-item .dropdown-menu li {
   padding: 0;
   position: relative;
-  overflow: hidden;
 }
 
 .navbar-area .main-nav .navbar .navbar-nav .nav-item .dropdown-menu li::before {
   position: absolute;
-  content: '';
   top: 0;
   left: 0px;
   width: 0;
@@ -967,9 +965,7 @@ Navbar Area Css
 }
 
 .navbar-area .main-nav .navbar .navbar-nav .nav-item .dropdown-menu li a {
-  text-transform: capitalize;
   padding: 10px 25px;
-  margin: 0;
   color: #181818;
   border-bottom: 1px dashed #eeeeee;
   font-size: 15px;
@@ -1037,7 +1033,6 @@ Navbar Area Css
 .navbar-area .nav-right {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
-  display: inline-flex;
   width: 100%;
   position: relative;
   top: -3px;
