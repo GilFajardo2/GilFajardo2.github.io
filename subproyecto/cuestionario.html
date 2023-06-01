@@ -12,10 +12,34 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<script>
+			function limpiar(){
+				document.querySelectorAll('.pregunta1')[0].style.color='black';
+				document.querySelectorAll('.pregunta2')[0].style.color='black';
+				document.querySelectorAll('.pregunta3')[0].style.color='black';
+				document.querySelectorAll('.pregunta4')[0].style.color='black';
+				document.querySelectorAll('.pregunta5')[0].style.color='black';
+				document.querySelectorAll('.pregunta6')[0].style.color='black';
+				document.querySelectorAll('.pregunta7')[0].style.color='black';
+				document.querySelectorAll('.pregunta8')[0].style.color='black';
+				document.querySelectorAll('.pregunta9')[0].style.color='black';
+				document.querySelectorAll('.pregunta10')[0].style.color='black';
+				document.querySelectorAll('.pregunta11')[0].style.color='black';
+				document.querySelectorAll('.pregunta12')[0].style.color='black';
+				document.querySelectorAll('.pregunta13')[0].style.color='black';
+				document.querySelectorAll('.pregunta14')[0].style.color='black';
+				document.querySelectorAll('.pregunta15')[0].style.color='black';
+				document.querySelectorAll('.pregunta16')[0].style.color='black';
+				document.querySelectorAll('.pregunta17')[0].style.color='black';
+				document.querySelectorAll('.pregunta18')[0].style.color='black';
+				document.querySelectorAll('.pregunta19')[0].style.color='black';
+				document.querySelectorAll('.pregunta20')[0].style.color='black';
+			}
+
 			function resultado() {
 			var p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16, p17,
             p18, p19, p20, nota;
 			
+			limpiar();
 			
 			if (document.getElementById('p14').checked==true) {p1=1}
 			if (p1==1) {document.querySelectorAll('.pregunta1')[3].style.color='#00FF00'}
