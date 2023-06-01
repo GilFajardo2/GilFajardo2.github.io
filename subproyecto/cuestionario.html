@@ -7,10 +7,10 @@
 <html>
 	<head>
 		<title>Informacion</title>
+		<title>Cuestionario</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-
 		<script>
 			function resultado() {
 			var p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16, p17,
@@ -32,88 +32,67 @@
 			if (document.getElementById('p44').checked==true) {p4=1}
 			if (p4==1) {document.querySelectorAll('.pregunta4')[3].style.color='#00FF00'}
 			else {p4=0}
-
             if (document.getElementById('p51').checked==true) {p5=1}
 			if (p5==1) {document.querySelectorAll('.pregunta5')[0].style.color='#00FF00'}
 			else {p5=0}
-
             if (document.getElementById('p63').checked==true) {p6=1}
 			if (p6==1) {document.querySelectorAll('.pregunta6')[2].style.color='#00FF00'}
 			else {p6=0}
-
             if (document.getElementById('p73').checked==true) {p7=1}
 			if (p7==1) {document.querySelectorAll('.pregunta7')[2].style.color='#00FF00'}
 			else {p7=0}
-
             if (document.getElementById('p84').checked==true) {p8=1}
 			if (p8==1) {document.querySelectorAll('.pregunta8')[3].style.color='#00FF00'}
 			else {p8=0}
-
             if (document.getElementById('p91').checked==true) {p9=1}
 			if (p9==1) {document.querySelectorAll('.pregunta9')[0].style.color='#00FF00'}
 			else {p9=0}
-
             if (document.getElementById('p101').checked==true) {p10=1}
 			if (p10==1) {document.querySelectorAll('.pregunta10')[0].style.color='#00FF00'}
 			else {p10=0}
-
             if (document.getElementById('p114').checked==true) {p11=1}
 			if (p11==1) {document.querySelectorAll('.pregunta11')[3].style.color='#00FF00'}
 			else {p11=0}
-
             if (document.getElementById('p122').checked==true) {p12=1}
 			if (p12==1) {document.querySelectorAll('.pregunta12')[1].style.color='#00FF00'}
 			else {p12=0}
-
             if (document.getElementById('p131').checked==true) {p13=1}
 			if (p13==1) {document.querySelectorAll('.pregunta13')[0].style.color='#00FF00'}
 			else {p13=0}
-
             if (document.getElementById('p142').checked==true) {p14=1}
 			if (p14==1) {document.querySelectorAll('.pregunta14')[1].style.color='#00FF00'}
 			else {p14=0}
-
             if (document.getElementById('p151').checked==true) {p15=1}
 			if (p15==1) {document.querySelectorAll('.pregunta15')[0].style.color='#00FF00'}
 			else {p15=0}
-
             if (document.getElementById('p164').checked==true) {p16=1}
 			if (p16==1) {document.querySelectorAll('.pregunta16')[3].style.color='#00FF00'}
 			else {p16=0}
-
             if (document.getElementById('p174').checked==true) {p17=1}
 			if (p17==1) {document.querySelectorAll('.pregunta17')[3].style.color='#00FF00'}
 			else {p17=0}
-
             if (document.getElementById('p184').checked==true) {p18=1}
 			if (p18==1) {document.querySelectorAll('.pregunta18')[3].style.color='#00FF00'}
 			else {p18=0}
-
             if (document.getElementById('p193').checked==true) {p19=1}
 			if (p19==1) {document.querySelectorAll('.pregunta19')[2].style.color='#00FF00'}
 			else {p19=0}
-
             if (document.getElementById('p201').checked==true) {p20=1}
 			if (p20==1) {document.querySelectorAll('.pregunta20')[0].style.color='#00FF00'}
 			else {p20=0}
 			
 			nota=p1+p2+p3+p4+p5+p6+p7+p8+p9+p10+p11+p12+p13+p14+p15+p16+p17+p18+p19+p20;
-
             document.getElementById('resultado').innerHTML="Aciertos: "+nota;
             if (rs==false) {document.forms[0].reset();location.reload()}
             }
 		</script>
-
 		</head>
 	<body class="is-preload">
 		<div id="page-wrapper">
-
 			<!-- Header -->
 				<div id="header">
-
 					<!-- Logo -->
-						<h1><a href="index2.html" class="logoHeader">Champions League</a></h1>
-
+						<h1><a href="index.html" class="logoHeader">Champions League</a></h1>
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
@@ -127,92 +106,138 @@
                                 <li><a href="cuestionario.html">Cuestionario</a></li>
 							</ul>
 						</nav>
-
 				</div>
-
 			<!-- Main -->
 				<section class="wrapper style1">
 					<div class="container">
 						<div class="row gtr-200">
 							<div class="col-8 col-12-narrower">
 								<div id="content">
-
 									<!-- Content -->
-
 										<article>
 													
 													<h2>T E S T</h2>
 													<hr>
 													<form style="font:normal 16px sans-serif">
-													<p>¿En que año se establecio la copa de europa (Champions League)?</p>
+													<p>1.- ¿En que año se establecio la copa de europa (Champions League)?</p>
 													<p class="pregunta1"><input type="radio" name="pregunta1" id="p11"> 1959</p>
 													<p class="pregunta1"><input type="radio" name="pregunta1" id="p12"> 1970</p>
 													<p class="pregunta1"><input type="radio" name="pregunta1" id="p13"> 1921</p>
-													<p class="pregunta1"><input type="radio" name="pregunta1" id="p14"> 1956</p>
+													<p class="pregunta1"><input type="radio" name="pregunta1" id="p14"> 1955</p>
 													
-													<p>¿Cuantos equipos participaron en su primera edicion?</p>
+													<p>2.- ¿Cuantos equipos participaron en su primera edicion?</p>
 													<p class="pregunta2"><input type="radio" name="pregunta2" id="p21">18</p>
 													<p class="pregunta2"><input type="radio" name="pregunta2" id="p22">20</p>
 													<p class="pregunta2"><input type="radio" name="pregunta2" id="p23">26</p>
 													<p class="pregunta2"><input type="radio" name="pregunta2" id="p24">16</p>
 													
-													<p>¿Que equipo se proclamo 5 veces seguidas en los primero años de la competicion?</p>
+													<p>3.- ¿Que equipo se proclamo 5 veces seguidas en los primero años de la competicion?</p>
 													<p class="pregunta3"><input type="radio" name="pregunta3" id="p31"> Real Madrid</p>
 													<p class="pregunta3"><input type="radio" name="pregunta3" id="p32"> Barcelona</p>
 													<p class="pregunta3"><input type="radio" name="pregunta3" id="p33"> Liverpool</p>
 													<p class="pregunta3"><input type="radio" name="pregunta3" id="p34"> Bayern Munchen</p>
 													
-													<p>¿Cuantos titulos consecutivos gano el Benfica?</p>
+													<p>4.- ¿Cuantos titulos consecutivos gano el Benfica?</p>
 													<p class="pregunta4"><input type="radio" name="pregunta4" id="p41"> 1</p>
 													<p class="pregunta4"><input type="radio" name="pregunta4" id="p42"> 3</p>
 													<p class="pregunta4"><input type="radio" name="pregunta4" id="p43"> 4</p>
-													<p class="pregunta4"><input type="radio" name="pregunta4" id="p44"> 2</p>e
-
-													<p>¿Cuantos titulos consecutivos gano el Inter de Milan?</p>
-													<p class="pregunta5"><input type="radio" name="pregunta5" id="p51"> 2</p>e
+													<p class="pregunta4"><input type="radio" name="pregunta4" id="p44"> 2</p>
+													<p>5.- ¿Cuantos titulos consecutivos gano el Inter de Milan?</p>
+													<p class="pregunta5"><input type="radio" name="pregunta5" id="p51"> 2</p>
 													<p class="pregunta5"><input type="radio" name="pregunta5" id="p52"> 1</p>
 													<p class="pregunta5"><input type="radio" name="pregunta5" id="p53"> 4</p>
 													<p class="pregunta5"><input type="radio" name="pregunta5" id="p54"> 3</p>
-
-													<p>¿En que decada se implemento la fase de grupos?</p>
+													<p>6.- ¿En que decada se implemento la fase de grupos?</p>
 													<p class="pregunta6"><input type="radio" name="pregunta6" id="p61"> 1940</p>
 													<p class="pregunta6"><input type="radio" name="pregunta6" id="p62"> 1950</p>
-													<p class="pregunta6"><input type="radio" name="pregunta6" id="p63"> 1960</p>e
+													<p class="pregunta6"><input type="radio" name="pregunta6" id="p63"> 1960</p>
 													<p class="pregunta6"><input type="radio" name="pregunta6" id="p64"> 1970</p>
-
-													<p>¿Que entrenador dirigio al AC Milan en las competiciones de 1989 y 1990?</p>
+													<p>7.- ¿Que entrenador dirigio al AC Milan en las competiciones de 1989 y 1990?</p>
 													<p class="pregunta7"><input type="radio" name="pregunta7" id="p71"> Carleto Ancelotti</p>
 													<p class="pregunta7"><input type="radio" name="pregunta7" id="p72"> Genaro Gatusso</p>
-													<p class="pregunta7"><input type="radio" name="pregunta7" id="p73"> Arrigo Sacchi</p>e
+													<p class="pregunta7"><input type="radio" name="pregunta7" id="p73"> Arrigo Sacchi</p>
 													<p class="pregunta7"><input type="radio" name="pregunta7" id="p74"> Jose Mourinho</p>
-
-													<p>¿En que año el PSV Eindhoven gano una champions league?</p>
+													<p>8.- ¿En que año el PSV Eindhoven gano una champions league?</p>
 													<p class="pregunta8"><input type="radio" name="pregunta8" id="p81"> 2004</p>
 													<p class="pregunta8"><input type="radio" name="pregunta8" id="p82"> 2003</p>
 													<p class="pregunta8"><input type="radio" name="pregunta8" id="p83"> 1990</p>
-													<p class="pregunta8"><input type="radio" name="pregunta8" id="p84"> 1988</p>e
-
-													<p>¿En que año se introdujo la fase de grupos previa a la final?</p>
-													<p class="pregunta9"><input type="radio" name="pregunta9" id="p91"> 1994</p>e
+													<p class="pregunta8"><input type="radio" name="pregunta8" id="p84"> 1988</p>
+													<p>9.- ¿En que año se introdujo la fase de grupos previa a la final?</p>
+													<p class="pregunta9"><input type="radio" name="pregunta9" id="p91"> 1994</p>
 													<p class="pregunta9"><input type="radio" name="pregunta9" id="p92"> 1998</p>
 													<p class="pregunta9"><input type="radio" name="pregunta9" id="p93"> 2000</p>
 													<p class="pregunta9"><input type="radio" name="pregunta9" id="p94"> 1993</p>
-
-													<p>¿Que equipo se vio envuelto en un escandalo que le empidio participar el siguiente año?</p>
-													<p class="pregunta10"><input type="radio" name="pregunta10" id="p101"> Olympique de Marsella</p>e
+													<p>10.- ¿Que equipo se vio envuelto en un escandalo que le empidio participar el siguiente año?</p>
+													<p class="pregunta10"><input type="radio" name="pregunta10" id="p101"> Olympique de Marsella</p>
 													<p class="pregunta10"><input type="radio" name="pregunta10" id="p102"> Atalanta</p>
 													<p class="pregunta10"><input type="radio" name="pregunta10" id="p103"> Real Betis</p>
 													<p class="pregunta10"><input type="radio" name="pregunta10" id="p104"> Osasuna</p>
-
+                                                    <p>11.- ¿En que año se rebautizo la competicion como la Copa de Europa de la UEFA?</p>
+													<p class="pregunta11"><input type="radio" name="pregunta11" id="p111"> 1981</p>
+													<p class="pregunta11"><input type="radio" name="pregunta11" id="p112"> 1992</p>
+													<p class="pregunta11"><input type="radio" name="pregunta11" id="p113"> 2000</p>
+													<p class="pregunta11"><input type="radio" name="pregunta11" id="p114"> 1985</p>
+                                                    <p>12.- ¿Cual fue una de las modificaciones introducidas en 1985 en la competicion de la Copa de Europa?</p>
+													<p class="pregunta12"><input type="radio" name="pregunta12" id="p121"> Nuevas reglas como el fuera de lugar</p>
+													<p class="pregunta12"><input type="radio" name="pregunta12" id="p122"> La inclusión de clubes que no necesariamente habían ganado sus ligas nacionales, sino que también podían clasificar a través de su rendimiento en competiciones domésticas anteriores.</p>
+													<p class="pregunta12"><input type="radio" name="pregunta12" id="p123"> Se incorporaron mas paises a la federacion para que sus clubes puedan competir en la Liga de Campeones</p>
+													<p class="pregunta12"><input type="radio" name="pregunta12" id="p124"> Se cambio el periodo en el que se llevaba a cabo la competicion por problemas con las fechas de las ligas domesticas de algunos equipos</p>
+                                                    <p>13.- ¿Que se implemento en la fase inicial del torneo durante este periodo?</p>
+													<p class="pregunta13"><input type="radio" name="pregunta13" id="p131"> Gol de visitante</p>
+													<p class="pregunta13"><input type="radio" name="pregunta13" id="p132"> Mas capacidad de clasificaciones</p>
+													<p class="pregunta13"><input type="radio" name="pregunta13" id="p133"> La eliminacion directa</p>
+													<p class="pregunta13"><input type="radio" name="pregunta13" id="p134"> El sistema de grupos</p>
+                                                    <p>14.- ¿Cuantas veces consecutivas gano el AC Milan durante este periodo y en que años?</p>
+													<p class="pregunta14"><input type="radio" name="pregunta14" id="p141"> 3 veces consecutivas en los años 1981-1982</p>
+													<p class="pregunta14"><input type="radio" name="pregunta14" id="p142"> 2 veces consecutivas en los años 1989-1990</p>
+													<p class="pregunta14"><input type="radio" name="pregunta14" id="p143"> 4 veces consecutivas en los años 2000-01-02-03</p>
+													<p class="pregunta14"><input type="radio" name="pregunta14" id="p144"> Ninguna</p>
+                                                    <p>15.- ¿Que club logro el campeonato en 1988?</p>
+													<p class="pregunta15"><input type="radio" name="pregunta15" id="p151"> PSV Eindhoven</p>
+													<p class="pregunta15"><input type="radio" name="pregunta15" id="p152"> Bayern Munchen</p>
+													<p class="pregunta15"><input type="radio" name="pregunta15" id="p153"> Vitkoria</p>
+													<p class="pregunta15"><input type="radio" name="pregunta15" id="p154"> Ajax</p>
+                                                    <p>16.- ¿Cuales 2 jugadores destacados dejaron su huella en la competicion durante el periodo 1985-1992</p>
+													<p class="pregunta16"><input type="radio" name="pregunta16" id="p111"> Chicharito y el Chucky</p>
+													<p class="pregunta16"><input type="radio" name="pregunta16" id="p162"> Marco Verrati y Lorenzo Insigne</p>
+													<p class="pregunta16"><input type="radio" name="pregunta16" id="p163"> Lionel Messi y CR7</p>
+													<p class="pregunta16"><input type="radio" name="pregunta16" id="p164"> Marco van Basten y Ruud Gullit</p>
+                                                    
+                                                    <p>17.- ¿En que año se produjo la transformacion de la Copa de Europa en la UEFA Champions League?</p>
+													<p class="pregunta17"><input type="radio" name="pregunta17" id="p171"> 1988</p>
+													<p class="pregunta17"><input type="radio" name="pregunta17" id="p172"> 1995</p>
+													<p class="pregunta17"><input type="radio" name="pregunta17" id="p173"> 1996</p>
+													<p class="pregunta17"><input type="radio" name="pregunta17" id="p174"> 1992</p>
+                                                    <p>18.- ¿Cual fue el resultado final de la final de 1994 entre el Milan y el Barcelona</p>
+													<p class="pregunta18"><input type="radio" name="pregunta18" id="p181"> 3-1 Favor Barca</p>
+													<p class="pregunta18"><input type="radio" name="pregunta18" id="p182"> 2-2</p>
+													<p class="pregunta18"><input type="radio" name="pregunta18" id="p183"> 4-0 favor Mlian</p>
+													<p class="pregunta18"><input type="radio" name="pregunta18" id="p184"> 1-0 favor Barca</p>
+                                                    <p>19.- ¿Qué impidió al Olympique de Marsella defender su título al año siguiente después de ganarlo en 1993?</p>
+													<p class="pregunta19"><input type="radio" name="pregunta19" id="p191"> Sumo mas de 5 expulsiones</p>
+													<p class="pregunta19"><input type="radio" name="pregunta19" id="p192"> Despidieron al DT</p>
+													<p class="pregunta19"><input type="radio" name="pregunta19" id="p193"> Estuvo involucrado en un escándalo de sobornos.</p>
+													<p class="pregunta19"><input type="radio" name="pregunta19" id="p194"> Ninguno</p>
+                                                    <p>20.- ¿Quién ganó el título en la edición de 1993 de la UEFA Champions League?</p>
+													<p class="pregunta20"><input type="radio" name="pregunta20" id="p201"> Olympique de Marsella</p>
+													<p class="pregunta20"><input type="radio" name="pregunta20" id="p202"> Spurs</p>
+													<p class="pregunta20"><input type="radio" name="pregunta20" id="p203"> Milan</p>
+													<p class="pregunta20"><input type="radio" name="pregunta20" id="p204"> Atletico de Madrid</p>
 													<hr>
 													<h2 id="resultado">Aciertos: 0</h2>
 													<p><input type="button" value=" R E S U L T A D O " onclick="resultado()"/></p>
 											</div>
-											<button id="submit">submit</button>
+											<button id="submit">R E I N I C I A R</button>
+                                            <br>
 										</article>
-
 								</div>
 							</div>
+							<div class="col-4 col-12-narrower">
+								<div id="sidebar">
+									<!-- Sidebar -->
+								</div>
+							</div>
+                    
 						</div>
 					</div>
 				</section>
@@ -243,6 +268,5 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
 	</body>
 </html>
