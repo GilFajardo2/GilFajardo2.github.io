@@ -40,11 +40,35 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
 
     <script>
+       function limpiar(){
+				document.querySelectorAll('.pregunta1')[3].style.color='black';
+				document.querySelectorAll('.pregunta2')[3].style.color='black';
+				document.querySelectorAll('.pregunta3')[0].style.color='black';
+				document.querySelectorAll('.pregunta4')[3].style.color='black';
+				document.querySelectorAll('.pregunta5')[0].style.color='black';
+				document.querySelectorAll('.pregunta6')[2].style.color='black';
+				document.querySelectorAll('.pregunta7')[2].style.color='black';
+				document.querySelectorAll('.pregunta8')[3].style.color='black';
+				document.querySelectorAll('.pregunta9')[0].style.color='black';
+				document.querySelectorAll('.pregunta10')[0].style.color='black';
+				document.querySelectorAll('.pregunta11')[3].style.color='black';
+				document.querySelectorAll('.pregunta12')[1].style.color='black';
+				document.querySelectorAll('.pregunta13')[0].style.color='black';
+				document.querySelectorAll('.pregunta14')[1].style.color='black';
+				document.querySelectorAll('.pregunta15')[0].style.color='black';
+				document.querySelectorAll('.pregunta16')[3].style.color='black';
+				document.querySelectorAll('.pregunta17')[3].style.color='black';
+				document.querySelectorAll('.pregunta18')[3].style.color='black';
+				document.querySelectorAll('.pregunta19')[2].style.color='black';
+				document.querySelectorAll('.pregunta20')[0].style.color='black';
+			}
+
         function resultado() {
 			var p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16, p17,
             p18, p19, p20, nota;
 			
-			
+            limpiar();
+
 			if (document.getElementById('p14').checked==true) {p1=1}
 			if (p1==1) {document.querySelectorAll('.pregunta1')[3].style.color='#00FF00'}
 			else {p1=0}
